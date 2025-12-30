@@ -1,0 +1,36 @@
+package Fundamentos.operadores;
+
+public class OperadoresLogicos {
+    public static void main(String[] args) {
+
+        boolean cond1 = true;
+        boolean cond2 = 3 > 7;
+
+        System.out.println(cond1 && !cond2);
+        System.out.println(cond1 || cond2);
+        System.out.println(cond1 ^ cond2);
+        System.out.println(!!cond1);
+        System.out.println(!cond2);
+
+        //Tabela verdade &&
+        System.out.println("Tabela verdade &&");
+        System.out.println(true && true);
+        System.out.println(true && false);
+        System.out.println(false && true);
+        System.out.println(false && false);
+
+        //Tabela verdade OR
+        System.out.println("Tabela verdade OR");
+        System.out.println(true || true);
+        System.out.println(true || false);
+        System.out.println(false || true);
+        System.out.println(false || false);
+
+        //Tabela verdade XOR
+        System.out.println("Tabela verdade XOR");
+        System.out.println(true ^ true);
+        System.out.println(true ^ false);
+        System.out.println(false ^ true);
+        System.out.println(false ^ false);
+    }
+}
