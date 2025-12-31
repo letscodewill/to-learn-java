@@ -1,4 +1,4 @@
-package Fundamentos;
+package Fundamentos.basico;
 
 public class ConvertionPrimitiveNumberTypes {
     public static void main(String[] args) {
