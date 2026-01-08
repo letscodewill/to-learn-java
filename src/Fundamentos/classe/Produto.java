@@ -3,17 +3,15 @@ package Fundamentos.classe;
 public class Produto {
 
     String nome;
-    double preco, desconto;
+    double preco;
+    static double desconto = 0.25;
 
-    Produto(String nomeInicial, double precoInicial, double descontoInicial){
+    Produto(String nomeInicial, double precoInicial){
         nome = nomeInicial;
         preco = precoInicial;
-        desconto = descontoInicial;
-    }
-    double calculaDesconto(double descontoDoGerente){
-        return preco * (1 - (desconto + descontoDoGerente));
     }
     double calculaDesconto(){
+        System.out.printf("Desconto: %.2f%n", preco - (preco * (1 - desconto )));
         return preco * (1 - desconto );
     }
 }
