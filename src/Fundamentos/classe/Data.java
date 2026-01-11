@@ -5,24 +5,24 @@ public class Data {
     int dia, mes, ano;
 
     Data(){
-        dia = 1;
-        mes = 1;
-        ano = 1970;
+//        dia = 1;
+//        mes = 1;
+//        ano = 1970;
+        this(1,1,1970);
     }
 
-    Data(int diaInicial, int mesInicial, int anoInicial){
-        dia = diaInicial;
-        mes = mesInicial;
-        ano = anoInicial;
-
+    Data(int dia, int mes, int ano){
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
     }
 
     //Desafio, criar método, retornar data formatada
-    String formataData(int dia, int mes, int ano) {
-        return dia + "/" + mes + "/" + ano;
+    String formataData() {
+        return this.dia + "/" + this.mes + "/" + this.ano;
     }
 
     void imprimirData() {
-        System.out.println(formataData(dia, mes, ano));
+        System.out.println(formataData());
     }
 }
